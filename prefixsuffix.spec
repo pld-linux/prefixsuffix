@@ -1,13 +1,13 @@
 Summary:	PrefixSuffix - batch renaming of files
 Summary(pl.UTF-8):	PrefixSuffix - zbiorcza zmiana nazw plików
 Name:		prefixsuffix
-Version:	0.6.6
+Version:	0.6.9
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/prefixsuffix/0.6/%{name}-%{version}.tar.xz
-# Source0-md5:	1c8b90091be8c8ce37216edd9c2c7544
-URL:		https://github.com/murraycu/prefixsuffix
+# Source0-md5:	74d4774c8022bde2f25690335e77bc20
+URL:		https://murraycu.github.io/prefixsuffix/
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.10
 BuildRequires:	gettext-tools >= 0.17
@@ -66,6 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS NEWS README TODO
 %attr(755,root,root) %{_bindir}/prefixsuffix
 %{_desktopdir}/prefixsuffix.desktop
-%{_datadir}/glib-2.0/schemas/org.gnome.prefixsuffix.gschema.xml
+%{_datadir}/glib-2.0/schemas/io.github.murraycu.PrefixSuffix.gschema.xml
 %{_pixmapsdir}/prefixsuffix.png
 %{_datadir}/prefixsuffix
